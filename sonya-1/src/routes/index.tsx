@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionOne } from "../Components/section1/section_one";
 import { SectionTwo } from "../Components/section2/section_two";
+import { SectionThree } from "../Components/section3";
 export const Route = createFileRoute("/")({
   component: RouteComponent,
 });
@@ -10,6 +11,7 @@ function RouteComponent() {
     <>
       <SectionOne></SectionOne>
       <SectionTwo></SectionTwo>
+      <SectionThree></SectionThree>
     </>
   );
 }

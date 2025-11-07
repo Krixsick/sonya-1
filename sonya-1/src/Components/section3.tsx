@@ -1,42 +1,21 @@
 import { motion } from "framer-motion";
 
-export function SectionTwo() {
+export function SectionThree() {
   return (
     <>
-      {/* Title */}
-      <div className="w-full h-[15%] min-h-[90px] bg-[var(--ref-primary-40)] flex items-center p-2 pt-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-5xl md:text-7xl font-bold text-black mb-4">
-            Flavours
-          </h2>
-          <p className="text-xl text-gray-600">Discover our signature treats</p>
-        </motion.div>
-      </div>
       {/* Card */}
-      <div className="w-full h-[100vh] bg-[var(--ref-primary-40)] p-2 flex justify-center items-center">
+      <div className="w-full h-[100vh] bg-[var(--ref-primary-40)] p-2 flex justify-center items-top">
         {/* Image */}
         <motion.div
-          className="w-full h-[70%] flex p-2 justify-center"
+          className="w-full h-[70%] flex justify-center p-2"
           whileHover={{ backgroundColor: "#fefae0" }}
           transition={{ duration: 0.3, ease: "easeIn" }}
         >
-          <div className="relative w-[45%] h-full">
-            <img
-              src="/cookie3.svg"
-              alt="Lemon Raspberry Cookie"
-              className="w-full h-full rotate-20"
-            />
-          </div>
           {/* Content */}
           <div className="w-[50%] h-full flex flex-col justify-center items-center">
             <div className="">
               <h3 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-                Lemon Raspberry White Chocolate Cookie
+                Dark Chocolate Cookie
               </h3>
             </div>
             <div>
@@ -67,6 +46,14 @@ export function SectionTwo() {
                 Order Now
               </motion.button>
             </div>
+          </div>
+          {/* Image */}
+          <div className="relative w-[45%] h-full">
+            <img
+              src="/cookie4.svg"
+              alt="Lemon Raspberry Cookie"
+              className="w-full h-full -rotate-30"
+            />
           </div>
         </motion.div>
       </div>

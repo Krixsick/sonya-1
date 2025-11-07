@@ -35,7 +35,7 @@ export function Navbar() {
         <div className="w-[12%] min-w-[100px] h-full flex justify-center items-center">
           <Link
             to="/w"
-            className="font-light text-lg hover:scale-105 transition-transform cursor-pointer"
+            className="font-light text-lg text-white hover:scale-105 transition-transform cursor-pointer"
           >
             Menu
           </Link>
@@ -43,7 +43,7 @@ export function Navbar() {
         <div className="w-[15%] min-w-[150px] h-full flex justify-center items-center">
           <Link
             to="/"
-            className="font-light text-2xl [&.active]:text-black cursor-pointer"
+            className="font-light text-2xl text-white [&.active]:text-white cursor-pointer"
           >
             Lok's Treats
           </Link>
@@ -51,7 +51,7 @@ export function Navbar() {
         <div className="w-[15%] min-w-[150px] h-full flex justify-center items-center">
           <Link
             to="/w"
-            className="font-light text-lg hover:scale-105 transition-transform cursor-pointer"
+            className="font-light text-lg text-white hover:scale-105 transition-transform cursor-pointer"
           >
             Order Now
           </Link>
