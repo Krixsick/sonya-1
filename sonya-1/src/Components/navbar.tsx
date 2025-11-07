@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +34,7 @@ export function Navbar() {
       >
         <div className="w-[12%] min-w-[100px] h-full flex justify-center items-center">
           <Link
-            to="/w"
+            to="/"
             className="font-light text-lg text-white hover:scale-105 transition-transform cursor-pointer"
           >
             Menu
@@ -50,7 +50,7 @@ export function Navbar() {
         </div>
         <div className="w-[15%] min-w-[150px] h-full flex justify-center items-center">
           <Link
-            to="/w"
+            to="/"
             className="font-light text-lg text-white hover:scale-105 transition-transform cursor-pointer"
           >
             Order Now
