@@ -1,11 +1,10 @@
 import { motion } from "motion/react";
-
 export function SectionOne() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-screen h-screen overflow-hidden">
       {/* Background Image */}
       <img
-        src="/background1.png"
+        src="/background2.png"
         alt="Delicious baked treats"
         className="absolute inset-0 w-full h-full object-cover"
       />

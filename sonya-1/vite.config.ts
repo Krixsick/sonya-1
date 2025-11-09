@@ -12,5 +12,5 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
-  base: process.env.VITE_BASE_PATH || "/sonya-1",
+  // base: process.env.VITE_BASE_PATH || "/sonya-1",
 });

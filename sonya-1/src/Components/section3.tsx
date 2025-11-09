@@ -1,24 +1,25 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 export function SectionThree() {
   return (
     <>
       {/* Card */}
-      <div className="w-full h-[100vh] bg-[var(--ref-primary-40)] p-2 flex justify-center items-top">
+      <div className="w-[100vw] h-[100vh] max-h-[700px] bg-[var(--ref-primary-40)] p-2 flex justify-center items-center">
         {/* Image */}
         <motion.div
-          className="w-full h-[70%] flex justify-center p-2"
+          className="w-[95%] h-[70%] flex justify-center p-2 rounded-xl"
+          initial={{ backgroundColor: "transparent" }}
           whileHover={{ backgroundColor: "#fefae0" }}
           transition={{ duration: 0.3, ease: "easeIn" }}
         >
           {/* Content */}
           <div className="w-[50%] h-full flex flex-col justify-center items-center">
-            <div className="">
-              <h3 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+            <div className="w-full text-left">
+              <h3 className="text-4xl w-full md:text-6xl font-bold text-gray-900 leading-tight">
                 Dark Chocolate Cookie
               </h3>
             </div>
-            <div>
+            <div className="w-full text-left">
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 A soft, fudgy cookie with tangy lemon zest, sweet raspberry
                 chunks, and creamy white chocolate pieces. Baked fresh daily
@@ -48,9 +49,9 @@ export function SectionThree() {
             </div>
           </div>
           {/* Image */}
-          <div className="relative w-[45%] h-full">
+          <div className="relative w-[45%] h-full pl-4">
             <img
-              src="/cookie4.svg"
+              src={`${import.meta.env.BASE_URL}cookie4.svg`}
               alt="Lemon Raspberry Cookie"
               className="w-full h-full -rotate-30"
             />
